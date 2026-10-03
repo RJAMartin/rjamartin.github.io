@@ -1,20 +1,21 @@
 # Renaud Martin — Portfolio
 
-A single home for five independent web tools and the thinking behind them.
+A single home for six independent web tools and the thinking behind them.
 
 **[Open the portfolio](https://rjamartin.github.io/)**
 
 ## Projects
 
-| Project   | What it does                              | Live app                                                    | Source                                                          |
-| --------- | ----------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| Stockroom | Prepare supplier CSVs for Shopify imports | [Try it](https://rjamartin.github.io/product-import-fixer/) | [Repository](https://github.com/RJAMartin/product-import-fixer) |
-| Forma     | Resize, compress and convert images       | [Try it](https://rjamartin.github.io/image-studio/)         | [Repository](https://github.com/RJAMartin/image-studio)         |
-| Folio     | Arrange, merge, rotate and split PDFs     | [Try it](https://rjamartin.github.io/pdf-workbench/)        | [Repository](https://github.com/RJAMartin/pdf-workbench)        |
-| Tidy      | Clean CSV and TSV data                    | [Try it](https://rjamartin.github.io/csv-cleaner/)          | [Repository](https://github.com/RJAMartin/csv-cleaner)          |
-| Goodwork  | Build quotes and invoices with PDF export | [Try it](https://rjamartin.github.io/quote-builder/)        | [Repository](https://github.com/RJAMartin/quote-builder)        |
+| Project   | What it does                                | Live app                                                    | Source                                                          |
+| --------- | ------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
+| Stockroom | Prepare supplier CSVs for Shopify imports   | [Try it](https://rjamartin.github.io/product-import-fixer/) | [Repository](https://github.com/RJAMartin/product-import-fixer) |
+| Forma     | Resize, compress and convert images         | [Try it](https://rjamartin.github.io/image-studio/)         | [Repository](https://github.com/RJAMartin/image-studio)         |
+| Folio     | Arrange, merge, rotate and split PDFs       | [Try it](https://rjamartin.github.io/pdf-workbench/)        | [Repository](https://github.com/RJAMartin/pdf-workbench)        |
+| Tidy      | Clean CSV and TSV data                      | [Try it](https://rjamartin.github.io/csv-cleaner/)          | [Repository](https://github.com/RJAMartin/csv-cleaner)          |
+| Goodwork  | Build quotes and invoices with PDF export   | [Try it](https://rjamartin.github.io/quote-builder/)        | [Repository](https://github.com/RJAMartin/quote-builder)        |
+| Cleartext | Extract text from images in three languages | [Try it](https://rjamartin.github.io/image-to-text/)        | [Repository](https://github.com/RJAMartin/image-to-text)        |
 
-These are independent portfolio projects, not client commissions. Screenshots come from the working applications; no adoption or business-impact metrics are claimed.
+These are independent portfolio projects, not client commissions. Screenshots come from the working applications; the Cleartext card illustrates its sample text workflow; no adoption or business-impact metrics are claimed.
 
 ## Run
 

@@ -52,3 +52,15 @@ document.querySelector("#download-request").addEventListener("click", () => {
   status.textContent =
     "Brief downloaded. Attach it to an email to rmartin1995@gmail.com. Nothing has been sent yet.";
 });
+
+const brief = form.elements.namedItem("brief");
+form.addEventListener("input", () => {
+  status.textContent = "";
+  fallback.hidden = true;
+  brief.setCustomValidity(
+    brief.value.trim().length >= 20
+      ? ""
+      : "Please describe your idea in at least 20 characters.",
+  );
+});
+document.querySelector("#request-fields").disabled = false;
