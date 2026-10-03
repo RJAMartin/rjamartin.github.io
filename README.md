@@ -41,7 +41,7 @@ The build copies the public files into `dist/`. Both development and preview use
 - `404.html`: recovery page linking to the portfolio.
 - `scripts/`: dependency-free build and local preview utilities.
 
-The page uses semantic HTML and CSS, with no client-side JavaScript. Navigation and expandable project details work without a framework. All assets are local; there are no analytics, remote fonts or trackers.
+The page uses semantic HTML and CSS, with a small JavaScript enhancement for preparing project requests. Navigation and expandable project details work without JavaScript. The form also provides a direct email fallback when scripting is disabled. All assets are local; there are no analytics, remote fonts or trackers.
 
 ## Publishing
 
@@ -53,6 +53,6 @@ Set **Settings → Pages → Source** to **GitHub Actions**. Run **Actions → D
 
 Edit project descriptions and destinations in `index.html`. Keep the live app, source and case-study links together. Add an actual screenshot under `assets/`, with accurate image dimensions and descriptive alt text. Update the visible project count when adding or removing projects.
 
-The contact section currently links to the public GitHub profile. Replace that link and its label when a preferred public email or professional profile is supplied. Keep the heading metadata and social preview aligned with any changes to the site’s identity.
+The request form prepares an email to the public contact address, rmartin1995@gmail.com. Visitors must send it in their email app; the site does not submit, store or email anything itself. Copy and plain-text download options provide fallbacks. Change the recipient in `request-model.js`, the form copy and the fallback messages together when updating the address. Keep the heading metadata and social preview aligned with any changes to the site’s identity.
 
 Screenshots and descriptions document each app's current scope; consult its repository for limitations.

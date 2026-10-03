@@ -104,8 +104,8 @@
             <h2 id="work-title">Selected work<span class="count">05</span></h2>
           </div>
           <p>
-            Real tools. Ready to try.<br />Every project has a live app and public
-            source code.
+            Real tools. Ready to try.<br />Every project has a live app and
+            public source code.
           </p>
         </div>
 
@@ -491,12 +491,138 @@
               first working version. I’d like to hear about it.
             </p>
           </div>
-          <div class="contact-action">
-            <a class="button dark" href="https://github.com/RJAMartin"
-              >Find me on GitHub <span aria-hidden="true">↗</span></a
-            ><span>Renaud Martin · Independent developer</span>
-          </div>
+          <a class="button dark" href="#request"
+            >Request a website or tool <span aria-hidden="true">↓</span></a
+          >
         </div>
+      </section>
+      <section
+        class="request-section wrap"
+        id="request"
+        aria-labelledby="request-title"
+      >
+        <div class="request-intro">
+          <p class="eyebrow muted">Start a conversation</p>
+          <h2 id="request-title">
+            What would you<br /><span class="serif">like to build?</span>
+          </h2>
+          <p>
+            Tell me about the problem, who it affects and what a useful result
+            would look like. Early ideas are welcome.
+          </p>
+          <p class="request-note">
+            This form prepares an email to
+            <a href="mailto:rmartin1995@gmail.com">rmartin1995@gmail.com</a>.
+            You review and send it from your email app. Nothing is submitted or
+            saved by this website.
+          </p>
+          <p class="request-note">
+            Suggesting a free tool is welcome too. A request starts a
+            conversation; it isn’t a booking or a commitment to build.
+          </p>
+        </div>
+        <form id="request-form" class="request-form">
+          <div class="form-pair">
+            <label
+              >Your name
+              <input
+                name="name"
+                autocomplete="name"
+                maxlength="100"
+                required
+                placeholder="Alex Martin"
+            /></label>
+            <label
+              >Your email
+              <input
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="200"
+                required
+                placeholder="alex@example.com"
+            /></label>
+          </div>
+          <label
+            >What do you have in mind?
+            <select name="kind" required>
+              <option value="">Choose a request type</option>
+              <option>Website or landing page</option>
+              <option>Web app or internal tool</option>
+              <option>New free tool idea</option>
+              <option>Improvement to an existing tool</option>
+            </select>
+          </label>
+          <label
+            >Tell me about it
+            <textarea
+              name="brief"
+              rows="6"
+              minlength="20"
+              maxlength="3000"
+              required
+              placeholder="Who is it for? What should it help them do? Include any useful links or examples."
+            ></textarea
+            ><span class="field-hint"
+              >At least 20 characters. Please don’t include passwords or
+              confidential data.</span
+            ></label
+          >
+          <div class="form-pair">
+            <label
+              >Budget <span class="optional">optional</span
+              ><input
+                name="budget"
+                maxlength="100"
+                placeholder="A range, or still figuring it out"
+            /></label>
+            <label
+              >Timing <span class="optional">optional</span
+              ><input
+                name="timing"
+                maxlength="100"
+                placeholder="A target date, or flexible"
+            /></label>
+          </div>
+          <div class="request-actions">
+            <button class="button primary" type="submit">
+              Open email draft <span aria-hidden="true">↗</span></button
+            ><button class="secondary-button" type="button" id="copy-request">
+              Copy request</button
+            ><button
+              class="secondary-button"
+              type="button"
+              id="download-request"
+            >
+              Download brief
+            </button>
+          </div>
+          <p
+            class="request-status"
+            id="request-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <details id="request-fallback" hidden>
+            <summary>
+              View the prepared request <span aria-hidden="true">+</span>
+            </summary>
+            <label class="fallback-label"
+              >Copy and send this to rmartin1995@gmail.com<textarea
+                id="request-preview"
+                rows="10"
+                readonly
+              ></textarea>
+            </label>
+          </details>
+          <noscript
+            ><p>
+              JavaScript is needed to prepare the brief. You can
+              <a href="mailto:rmartin1995@gmail.com">email Renaud directly</a>
+              instead.
+            </p></noscript
+          >
+        </form>
       </section>
     </main>
     <footer class="site-footer wrap">
@@ -508,5 +634,6 @@
         >Source of this site <span aria-hidden="true">↗</span></a
       ><span>© 2026</span>
     </footer>
+    <script type="module" src="./request.js"></script>
   </body>
 </html>

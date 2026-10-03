@@ -6,6 +6,8 @@ await mkdir(`${root}/dist`, { recursive: true });
 for (const file of [
   "index.html",
   "styles.css",
+  "request.js",
+  "request-model.js",
   "assets",
   "404.html",
   "robots.txt",
